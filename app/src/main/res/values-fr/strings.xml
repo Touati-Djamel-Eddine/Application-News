@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Infos</string>
+    <string name="title">Titre du film</string>
+    <string name="des_movie"><b>Description : </b></string>
+    <string name="rating"><b>Vote : </b></string>
+    <string name="relaseDate"><b>Date : </b></string>
+    <string name="OriginalLanguage"><b>langue originale : </b></string>
+    <string name="lastNews"><b>Actualités</b></string>
+    <string name="popularMovies"><b>Films populaire</b></string>
+
+</resources>

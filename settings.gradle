@@ -1,0 +1,2 @@
+include ':app', ':apirequestlibrary'
+rootProject.name='Movies'

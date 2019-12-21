@@ -1,0 +1,79 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'com.github.dcendents.android-maven'
+
+ext {
+    bintrayRepo = 'apirequestlibrary'
+    bintrayName = 'com.djamel.apirequestlibrary'
+
+    libraryName='apirequestlibrary'
+
+    publishedGroupId = 'com.djamel.apirequestlibrary'
+    artifact = 'apirequestlibrary'
+
+    libraryDescription = 'push library apirequest in bintray'
+
+    siteUrl = 'https://github.com/dtouati/apirequestlibrary'
+    gitUrl = 'https://github.com/dtouati/apirequestlibrary.git'
+
+    libraryVersion = '1.0.0'
+
+    developerId = 'dtouati'
+    developerName = 'Touati Djamel'
+    developerEmail = 'dtouati@adneom.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.1.0'
+    testImplementation 'junit:junit:4.12'
+
+
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation "com.squareup.retrofit2:retrofit:2.4.0"
+    implementation "com.squareup.retrofit2:converter-moshi:2.4.0"
+    implementation "com.squareup.okhttp3:okhttp:3.11.0"
+
+
+
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}
+
+if (project.rootProject.file('local.properties').exists()) {
+    apply from: 'https://raw.githubusercontent.com/numetriclabz/jcenter/master/installv.gradle'
+    apply from: 'https://raw.githubusercontent.com/numetriclabz/jcenter/master/bintrayv.gradle'
+}

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Infos</string>
+    <string name="title">Title of the movie</string>
+    <string name="des_movie"><b> Overview : </b></string>
+    <string name="rating"><b>Vote average : </b></string>
+    <string name="relaseDate"><b>Date : </b></string>
+    <string name="OriginalLanguage"><b>Original Language : </b></string>
+    <string name="lastNews"><b>Last news</b></string>
+    <string name="popularMovies"><b>Popular Movies</b></string>
+
+
+</resources>

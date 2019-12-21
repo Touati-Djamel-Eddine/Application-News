@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.UI.DetailsActivity">
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mPrograssBar"
+        android:layout_centerInParent="true"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/mLinearLayout"
+            >
+
+            <ImageView
+                android:id="@+id/image_movie"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_sizeInDetails"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/movieTitle"
+                android:text="@string/title"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_title"
+                android:paddingTop="10dp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/movieRelaseDate"
+                android:text="@string/relaseDate"
+                android:textAlignment="center"
+                android:textSize="@dimen/text_other_info"
+                android:paddingTop="@dimen/paddingInDetailsView"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/movieOriginalLanguage"
+                android:text="@string/OriginalLanguage"
+                android:textAlignment="center"
+                android:textSize="@dimen/text_other_info"
+                android:paddingTop="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/movievoteAverage"
+                android:text="@string/rating"
+                android:textAlignment="center"
+                android:textSize="@dimen/text_other_info"
+                android:paddingTop="@dimen/paddingInDetailsView"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/movieOverview"
+                android:text="@string/des_movie"
+                android:textAlignment="center"
+                android:textSize="@dimen/text_other_info"
+                android:padding="10dp"
+
+                />
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

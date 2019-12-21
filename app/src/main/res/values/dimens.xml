@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="image_sizeHeight">200dp</dimen>
+    <dimen name="image_sizeWidth">380dp</dimen>
+    <dimen name="image_sizeInDetails">400dp</dimen>
+    <dimen name="margin">10dp</dimen>
+    <dimen name="text_size_title">30dp</dimen>
+    <dimen name="text_other_info">18dp</dimen>
+    <dimen name="paddingInDetailsView">10dp</dimen>
+    <dimen name="lastNews">20dp</dimen>
+
+</resources>
